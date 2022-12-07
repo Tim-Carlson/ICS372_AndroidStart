@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">CarDealer</string>
+    <string name="title_activity_dealer_info">DealerInfoActivity</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="Dealer_Name">Dealer name: %1$s</string>
+    <string name="Dealer_ID"><u>Dealer ID:</u> %1$s</string>
+    <string name="Dealer_Renting">Renting Status: %1$b</string>
+    <string name="Dealer_Rent_Button_Label"><u>Rent</u></string>
+    <string name="Dealer_VehicleAcquisition">Acquisition Status: %1$b</string>
+    <string name="Dealer_Transfer"><u>Transfer inventory to</u></string>
+    <string name="Dealer_Export">Export: </string>
+    <string name="Dealer_Name_Change"><u>Dealer Name Change</u></string>
+    <string name="Dealer_Acquisition_Button_Label"><u>Vehicle Acquisition</u></string>
+    <string name="Dealer_Rent_Ability"><u>"Rent"</u></string>
+    <string name="enable">enable</string>
+    <string name="disable">disable</string>
+    <string name="receiving_dealer_field">receiving dealer</string>
+    <string name="transfer_button_label">Transfer</string>
+    <string name="export_button_label">JSON</string>
+    <string name="new_dealer_name_field">new dealer name</string>
+    <string name="Change_Name_Button_Label">Change</string>
+    <string name="next_activity_button_label">View Inventory</string>
+    <string name="btnxml">Import XML File</string>
+    <string name="btnjson">Import JSON File</string>
+    <string name="xmlpath">XML Path File</string>
+    <string name="jsonpath">Json Path File</string>
+    <string name="titleFrame">Select Vehicle List</string>
+    <string name="sendFileList">View All Vehicles</string>
+    <string name="titleFileList">Vehicle List</string>
+    <string name="clear_json_path">Clear</string>
+    <string name="clear_xml_path">Clear</string>
+    <string name="add_vehicle_btn">Add Vehicle</string>
+</resources>
