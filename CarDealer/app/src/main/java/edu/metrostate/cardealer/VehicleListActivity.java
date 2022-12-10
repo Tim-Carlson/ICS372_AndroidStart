@@ -1,14 +1,15 @@
 package edu.metrostate.cardealer;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import edu.metrostate.cardealer.entity.vehicle.Vehicle;
 
 public class VehicleListActivity extends AppCompatActivity {
 
@@ -33,8 +34,6 @@ public class VehicleListActivity extends AppCompatActivity {
                 showDialog(adapter.getItem(position));
             }
         });
-
-
     }
 
     public void showDialog(Vehicle vehicle) {
@@ -42,8 +41,19 @@ public class VehicleListActivity extends AppCompatActivity {
         Dialog dialog = new AlertDialog.Builder(this)
                 .setTitle("My alert")
                 .setCancelable(false)
-                .setTitle("Vehicle ID: " + vehicle.getId())
-                .setMessage("Model: " + vehicle.getModel())
+                .setTitle("Vehicle ID: " + vehicle.getVehicleId())
+                .setMessage(String.format("""
+                                Type : %s
+                                \nMake: %s
+                                \nModel: %s
+                                \nDealerId: %s
+                                \nDate Acquired: %s
+                                """
+                        , vehicle.getVehicleType()
+                        , vehicle.getVehicleManufacturer()
+                        , vehicle.getVehicleModel()
+                        , vehicle.getDealershipId()
+                        , vehicle.getAcquisitionDate()))
                 .setPositiveButton( "OK", (dialog1, id) -> dialog1.dismiss()).create();
 
         dialog.show();

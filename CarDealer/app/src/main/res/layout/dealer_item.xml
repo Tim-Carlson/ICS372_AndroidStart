@@ -6,29 +6,19 @@
     android:padding="5dp">
 
     <TextView
-        android:id="@+id/make_model"
+        android:id="@+id/dealer_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="Vehicle Model"
-        />
+        android:text="Dealer Name"
+        android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/acquisition_date"
+        android:id="@+id/dealer_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/make_model"
+        android:layout_below="@id/dealer_name"
         android:layout_marginStart="10dp"
-        android:text="Acquisition Date"
-        android:textSize="16sp" />
-
-    <TextView
-        android:id="@+id/vehicle_dealer_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/acquisition_date"
-        android:layout_marginStart="10dp"
-        android:text="Vehicle Dealer ID"
+        android:text="DealerID"
         android:textSize="16sp" />
 
 
